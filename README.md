@@ -5,7 +5,7 @@ Modified version of Scirra Fade behaviour.
 Added the following extra functionality:
 
 ### Editor properties:
-Option to loop the fade indefinitely
+- Option to loop the fade indefinitely
 
 ### Actions:
 - Pause fade
