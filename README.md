@@ -13,7 +13,7 @@ Added the following extra functionality:
 
 
 ### Conditions:
--is Fading boolean
+- Fade is active boolean
 
 ### Expressions:
 - Fade stage
