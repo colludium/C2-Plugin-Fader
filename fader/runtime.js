@@ -50,6 +50,7 @@ cr.behaviors.Fader = function(runtime)
 		this.fadeOutTime = this.properties[3];
 		this.destroy = this.properties[4];			// 0 = no, 1 = after fade out
 		this.timeInStage = 0;
+		this.stage = 0;	
 		
 		this.maxOpacity = (this.inst.opacity ? this.inst.opacity : 1.0);
 		
@@ -100,7 +101,6 @@ cr.behaviors.Fader = function(runtime)
 	{
 		if (this.isRunning)
 		{
-
 			this.timeInStage += this.runtime.getDt(this.inst);
 			
 			// Stage 0: fade-in
@@ -262,12 +262,12 @@ cr.behaviors.Fader = function(runtime)
 	
 	Acts.prototype.ResumeFade = function ()
 	{
-		this.isRunning  = true;
+		this.isRunning = true;
 	};
 	
 	Acts.prototype.PauseTheFade = function ()
 	{
-		this.isRunning  = false;
+		this.isRunning = false;
 	};
 	
 	Acts.prototype.SetFadeInTime = function (t)

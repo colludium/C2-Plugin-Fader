@@ -23,7 +23,7 @@ AddCondition(3, 0, "Is running", "", "Fade is running", "Fade is running.", "Fad
 // Actions
 AddAction(0, 0, "Restart fade", "Run", "{my}: restart fade", "Run the fade again.", "RestartFade");
 
-AddAction(1, 0, "Resume fade", "Run", "{my}: resume fade", "Resume the fade, if previously paused.", "ResumeFade");
+AddAction(1, 0, "Resume fade", "Run", "{my}: start / resume fade", "Set the fade to running, if paused or not started.", "ResumeFade");
 
 AddNumberParam("Fade-in time", "Time in seconds to spend in the fade-in phase.");
 AddAction(2, 0, "Set fade-in time", "Settings", "{my}: set fade-in time to <i>{0}</i>", "Set the fade-in time property.", "SetFadeInTime");
@@ -35,6 +35,8 @@ AddNumberParam("Fade-out time", "Time in seconds to spend in the fade-out phase.
 AddAction(4, 0, "Set fade-out time", "Settings", "{my}: set fade-out time to <i>{0}</i>", "Set the fade-out time property.", "SetFadeOutTime");
 
 AddAction(5, 0, "Pause fade", "Run", "{my}: pause the fade.", "Pause the fade.", "PauseTheFade");
+
+
 
 //////////////////////////////////////////////////////////////
 // Expressions
